@@ -44,7 +44,7 @@ const DirectoryNavigator = createStackNavigator(
     initialRouteName: 'Directory',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: '#5637DD',
+        backgroundColor: '#82CFD7',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
@@ -61,7 +61,7 @@ const HomeNavigator = createStackNavigator(
   {
       defaultNavigationOptions: ({navigation}) => ({
           headerStyle: {
-              backgroundColor: '#5637DD'
+              backgroundColor: '#82CFD7'
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -84,7 +84,7 @@ const AboutNavigator = createStackNavigator(
   {
       defaultNavigationOptions: ({navigation}) => ({
           headerStyle: {
-              backgroundColor: '#5637DD'
+              backgroundColor: '#82CFD7'
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -108,7 +108,7 @@ const ContactNavigator = createStackNavigator(
   {
       defaultNavigationOptions: ({navigation}) => ({
           headerStyle: {
-              backgroundColor: '#5637DD'
+              backgroundColor: '#82CFD7'
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -131,7 +131,7 @@ const ReservationNavigator = createStackNavigator(
   {
       defaultNavigationOptions: ({navigation}) => ({
           headerStyle: {
-              backgroundColor: '#5637DD'
+              backgroundColor: '#82CFD7'
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -160,7 +160,7 @@ const CustomDrawerContentComponent = props => (
             style={styles.drawerImage}
           />
           <View style={{flex: 2}}>
-            <Text style={styles.drawerHeaderText}>NuCamp</Text>
+            <Text style={styles.drawerHeaderText}>Socia™ Business Network</Text>
           </View>
         </View>
         <DrawerItems {...props} />
@@ -184,7 +184,7 @@ const MainNavigator = createDrawerNavigator(
               )
           }
       },
-      Directory: {
+      Business: {
           screen: DirectoryNavigator,
           navigationOptions: {
               drawerIcon: ({tintColor}) => (
@@ -198,20 +198,20 @@ const MainNavigator = createDrawerNavigator(
           }
       },
 
-      Reservation: {
-        screen: ReservationNavigator,
-        navigationOptions: {
-            drawerLabel: 'Reserve Campsite',
-            drawerIcon: ({tintColor}) => (
-                <Icon
-                    name='tree'
-                    type='font-awesome'
-                    size={24}
-                    color={tintColor}
-                />
-            )
-          }
-      },
+     //* Reservation: {
+   //     screen: ReservationNavigator,
+   //     navigationOptions: {
+   //         drawerLabel: 'Work Dates',
+   //         drawerIcon: ({tintColor}) => (
+  //              <Icon
+   //                 name='tree'
+  //                  type='font-awesome'
+   //                 size={24}
+   //                 color={tintColor}
+  //              />
+   //         )
+   //       }
+  //    },
 
       About: {
           screen: AboutNavigator,
@@ -243,7 +243,7 @@ const MainNavigator = createDrawerNavigator(
       }
   },
   {
-      drawerBackgroundColor: '#CEC8FF',
+      drawerBackgroundColor: '#A4E8EF',
       contentComponent: CustomDrawerContentComponent
   }
 );
@@ -280,7 +280,7 @@ const styles = StyleSheet.create({
       flex: 1,
   },
   drawerHeader: {
-      backgroundColor: '#5637DD',
+      backgroundColor: '#82CFD7',
       height: 140,
       alignItems: 'center',
       justifyContent: 'center',

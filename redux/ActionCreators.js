@@ -152,27 +152,3 @@ export const addFavorite = campsiteId => ({
     type: ActionTypes.ADD_FAVORITE,
     payload: campsiteId
 });
-
-
-
-
-
-
-// export const postComment = {
-//     campsiteId,
-//     rating,
-//     author,
-//     text
-// };
-
-// export const newComment = {
-//     campsiteId,
-//     rating,
-//     author,
-//     text
-// };
-
-// export const addCampsites = campsites => ({
-//     type: ActionTypes.ADD_CAMPSITES,
-//     payload: campsites
-// });

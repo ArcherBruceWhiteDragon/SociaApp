@@ -18,7 +18,7 @@ class Reservation extends Component {
     }
 
     static navigationOptions = {
-        title: 'Reserve Campsite'
+        title: 'Reserve Business'
     }
 
     toggleModal() {
@@ -46,7 +46,7 @@ class Reservation extends Component {
         return (
             <ScrollView>
                 <View style={styles.formRow}>
-                    <Text style={styles.formLabel}>Number of Campers</Text>
+                    <Text style={styles.formLabel}>Numbers of Business</Text>
                     <Picker
                         style={styles.formItem}
                         selectedValue={this.state.campers}
@@ -61,7 +61,7 @@ class Reservation extends Component {
                     </Picker>
                 </View>
                 <View style={styles.formRow}>
-                    <Text style={styles.formLabel}>Hike-In?</Text>
+                    <Text style={styles.formLabel}>Business-In?</Text>
                     <Switch
                         style={styles.formItem}
                         value={this.state.hikeIn}
@@ -77,7 +77,7 @@ class Reservation extends Component {
                         }
                         title={this.state.date.toLocaleDateString('en-US')}
                         color='#5637DD'
-                        accessibilityLabel='Tap me to select a reservation date'
+                        accessibilityLabel='Tap me to subscribe to business'
                     />
                 </View>
                 {this.state.showCalendar && (
@@ -96,7 +96,7 @@ class Reservation extends Component {
                         onPress={() => this.handleReservation()}
                         title='Search'
                         color='#5637DD'
-                        accessibilityLabel='Tap me to search for available campsites to reserve'
+                        accessibilityLabel='Tap me to search for available business'
                     />
                 </View>
                 <Modal
@@ -106,9 +106,9 @@ class Reservation extends Component {
                     onRequestClose={() => this.toggleModal()}
                 >
                     <View style={styles.modal}>
-                        <Text style={styles.modalTitle}>Search Campsite Reservations</Text>
+                        <Text style={styles.modalTitle}>Search Business Services</Text>
                         <Text style={styles.modalText}>
-                            Number of Campers: {this.state.campers}
+                            Number of Business: {this.state.campers}
                         </Text>
                         <Text style={styles.modalText}>
                             Hike-In?: {this.state.hikeIn ? 'Yes' : 'No'}

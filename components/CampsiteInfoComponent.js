@@ -35,14 +35,14 @@ function RenderCampsite(props) {
                     <Icon 
                         name={props.favorite ? 'heart' : 'heart-o'}
                         type='font-awesome'
-                        color='#f50'
+                        color='#29B4F2'
                         reverse
                         onPress={() => props.favorite ? console.log('Already set as a favorite') : props.markFavorite()}
                     />
                     <Icon
                         name={'pencil'}
                         type='font-awesome'
-                        color='#5637DD'
+                        color='#F8CB43'
                         raised
                         reverse
                         onPress={() => props.onShowModal()}
@@ -115,7 +115,7 @@ class CampsiteInfo extends Component {
     }
 
     static navigationOptions = {
-        title: 'Campsite Information'
+        title: 'Social Business Information'
     }
 
     render() {

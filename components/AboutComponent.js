@@ -15,15 +15,15 @@ const mapStateToProps = state => {
 
 function Mission() {
   return (
-    <Card title='Our Mission'>
+    <Card title='Business Social Mission'>
       <Text style={{margin: 10}}>
-        We present a curated database of the best campsites in the vast woods
-        and backcountry of the World Wide Web Wilderness. We increase access to
-        adventure for the public while promoting safe and respectful use of
-        resources. The expert wilderness trekkers on our staff personally verify
-        each campsite to make sure that they are up to our standards. We also
-        present a platform for campers to share reviews on campsites they have
-        visited with each other.
+      One business social network will inspire & build a happier and better world.
+      People are truly engaged with the platform because it's so easy to use and intuitive. It really gives Socia™️ a business platform a personality.
+      
+      More communication, less noise, everything in one place
+      Whether you’re looking to streamline internal advertising, replace all your connections, implement on our business social network, or launch our Socia™️ Network app.
+      Built-in features for peer recognition, Verification, Business company values, goals, and feedback, to bring your life into a business culture to life.
+      We combine the power of a social network, intranet, and employee app into one familiar digital experience that a new future loves.
       </Text>
     </Card>
   )
